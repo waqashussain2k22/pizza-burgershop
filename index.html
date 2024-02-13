@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+            margin-top: 20px;
+        }
+
+        form {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        div.menu-section {
+            text-align: center;
+            margin-bottom: 20px;
+            width: 48%;
+            box-sizing: border-box;
+        }
+
+        h2 {
+            font-size: 18px;
+            color: #333;
+            background-color: #b7b0b0;
+            margin-top: 0;
+            padding: 10px;
+        }
+
+        label {
+            font-size: 16px;
+            color: #555;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        img {
+            width: 100px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        input {
+            width: 80px;
+            padding: 10px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        h3 {
+            margin: 0;
+            font-size: 16px;
+            color: #333;
+        }
+
+        input[type="button"] {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 15px;
+            width: 100%;
+        }
+
+        input[type="button"]:hover {
+            background-color: #45a049;
+        }
+       
+
+        #bill {
+            display: none;
+            margin-top: 20px;
+            text-align: left;
+        }
+
+        #bill h2 {
+            color: #333;
+        }
+
+        #bill p {
+            margin: 0;
+            font-size: 16px;
+            color: #555;
+        }
+
+        #burgerForm {
+            width: 700px;
+            margin-top: 50px;
+        }
+
+        #pizzaForm {
+            width: 700px;
+            margin-top: 50px;
+            height: 740px;
+        }
+
+        .h2,
+        img {
+            width: 90px;
+            height: 80px;
+        }
+        div, h2 {
+    border: 1px solid #e5e5e5; /* You can adjust the color and thickness */
+    border-radius: 10px;
+}
+        
+    </style>
+    <title>Burger & Pizza Shop</title>
+</head>
+<body>
+    <h1 style="background-color: #45a049; font-family: 'Times New Roman', Times, serif; border-radius: 2em / 5em ; border: 2px solid rgb(249, 249, 249);">Welcome to Pizzazz Palace & Burgers</h1>
+    <div style="display: flex; justify-content: space-between;">
+        <div id="main" style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+            <div class="menu-section">
+                <h2 style="position: absolute; margin-left: 300px;">Burger Menu</h2>
+                <form id="burgerForm">
+                    <div>
+                        <div>
+                            <h2>Hamburger</h2>
+                            <img src="./Hamburger.jpg" alt="Hamburger Image">
+                            <label for="hamburgerQty">Quantity:</label>
+                            <input type="number" id="hamburgerQty" name="hamburgerQty" value="0" data-price="600">
+                            <h3>R.S 600</h3>
+                        </div>
+
+                        <div>
+                            <h2>Turkey burger</h2>
+                            <img src="./Turkey burger.jpg" alt="Turkey Burger Image">
+                            <label for="turkeyBurgerQty">Quantity:</label>
+                            <input type="number" id="turkeyBurgerQty" name="turkeyBurgerQty" value="0" data-price="800">
+                            <h3>R.S 800</h3>
+                        </div>
+
+                        <div>
+                            <h2>Bean burger</h2>
+                            <img src="./Bean burger.jpg" alt="Bean Burger Image">
+                            <label for="beanBurgerQty">Quantity:</label>
+                            <input type="number" id="beanBurgerQty" name="beanBurgerQty" value="0">
+                            <h3>R.S 850</h3>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div>
+                            <h2>Beyond meat burger</h2>
+                            <img src="./Beyond meat burger.jpg" alt="Beyond Meat Burger Image">
+                            <label for="beyondMeatBurgerQty">Quantity:</label>
+                            <input type="number" id="beyondMeatBurgerQty" name="beyondMeatBurgerQty" value="0">
+                            <h3>R.S 750</h3>
+                        </div>
+
+                        <div>
+                            <h2>Portobello mushroom burger</h2>
+                            <img src="./Portobello mushroom burger.jpg" alt="Portobello Mushroom Burger Image">
+                            <label for="portobelloBurgerQty">Quantity:</label>
+                            <input type="number" id="portobelloBurgerQty" name="portobelloBurgerQty" value="0">
+                            <h3>R.S 950</h3>
+                        </div>
+
+                        <div>
+                            <h2>Elk burger</h2>
+                            <img src="./Elk burger.jpg" alt="Elk Burger Image">
+                            <label for="elkBurgerQty">Quantity:</label>
+                            <input type="number" id="elkBurgerQty" name="elkBurgerQty" value="0">
+                            <h3>R.S 900</h3>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div>
+                            <h2>Veggie burger</h2>
+                            <img src="./Veggie burger.jpg" alt="Veggie Burger Image">
+                            <label for="veggieBurgerQty">Quantity:</label>
+                            <input type="number" id="veggieBurgerQty" name="veggieBurgerQty" value="0">
+                            <h3>R.S 650</h3>
+                        </div>
+                        <div>
+                            <h2>KFC Zinger</h2>
+                            <img src="./KFC Zinger Burger.jpeg" alt="KFC Zinger Burger Image">
+                            <label for="kfcZingerQty">Quantity:</label>
+                            <input type="number" id="kfcZingerQty" name="kfcZingerQty" value="0">
+                            <h3>R.S 650</h3>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="menu-section">
+                <h2 style="position: absolute; margin-left: 300px;">Pizza Menu</h2>
+                <form id="pizzaForm">
+                    <div>
+                        <div>
+                            <h2>Fajita Sicilian</h2>
+                            <img src="./fajita sicilian.jpg" alt="Fajita Sicilian Image" style="width: 66px;">
+                            <label for="fajitaSicilianQty">Quantity:</label>
+                            <input type="number" id="fajitaSicilianQty" name="fajitaSicilianQty" value="0">
+                            <h3>R.S 600</h3>
+                        </div>
+
+                        <div>
+                            <h2>Hawaiian Pizza</h2>
+                            <img src="./Hawaiian Pizza.jpg" alt="Hawaiian Pizza Image" style="width: 70px; height: 70px;">
+                            <label for="hawaiianPizzaQty">Quantity:</label>
+                            <input type="number" id="hawaiianPizzaQty" name="hawaiianPizzaQty" value="0">
+                            <h3>R.S 800</h3>
+                        </div>
+
+                        <div>
+                            <h2>Margherita Pizza</h2>
+                            <img src="./Margherita Pizza.jpg" alt="Margherita Pizza Image">
+                            <label for="margheritaPizzaQty">Quantity:</label>
+                            <input type="number" id="margheritaPizzaQty" name="margheritaPizzaQty" value="0">
+                            <h3>R.S 850</h3>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div>
+                            <h2>Meat Pizza</h2>
+                            <img src="./Meat Pizza.jpg" alt="Meat Pizza Image">
+                            <label for="meatPizzaQty">Quantity:</label>
+                            <input type="number" id="meatPizzaQty" name="meatPizzaQty" value="0">
+                            <h3>R.S 750</h3>
+                        </div>
+
+                        <div>
+                            <h2>Pepperoni Pizza</h2>
+                            <img src="./Pepperoni Pizza.jpg" alt="Pepperoni Pizza Image" style="height: 70px;">
+                            <label for="pepperoniPizzaQty">Quantity:</label>
+                            <input type="number" id="pepperoniPizzaQty" name="pepperoniPizzaQty" value="0">
+                            <h3>R.S 950</h3>
+                        </div>
+
+                        <div>
+                            <h2>Tandoori Chicken</h2>
+                            <img src="./Tandoori Chicken Pizza.jpg" alt="Tandoori Chicken Pizza Image">
+                            <label for="tandooriChickenQty">Quantity:</label>
+                            <input type="number" id="tandooriChickenQty" name="tandooriChickenQty" value="0">
+                            <h3>R.S 900</h3>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div>
+                            <h2>Veggie Pizza</h2>
+                            <img src="./Veggie Pizza.jpg" alt="Veggie Pizza Image">
+                            <label for="veggiePizzaQty">Quantity:</label>
+                            <input type="number" id="veggiePizzaQty" name="veggiePizzaQty" value="0">
+                            <h3>R.S 650</h3>
+                        </div>
+                        <div>
+                            <h2>Afghani Tikka</h2>
+                            <img src="./Afghani Tikka.jpg" alt="Afghani Tikka Image">
+                            <label for="afghanitikkaQty">Quantity:</label>
+                            <input type="number" id="afghanitikkaQty" name="afghanitikkaQty" value="0">
+                            <h3>R.S 650</h3>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    
+  
+
+  
+    <div id="bill">
+        <h2 style="text-align: center;">Order Summary</h2>
+        <p style="text-align: center;">Total Bill: <span id="totalBill">0</span> R.S</p>
+    </div>
+    <form id="orderForm">
+        <input type="button" value="Submit Order" style="width: 400px; margin-top: 20px;background-color: #45a049; font-weight: bolder;font-size: 30px; " onclick="calculateTotalBill()">
+    </form>
+
+    <script>
+        function calculateTotalBill() {
+           
+            let burgerTotal = calculateCategoryTotal(
+                'hamburgerQty', 'turkeyBurgerQty', 'beanBurgerQty',
+                'beyondMeatBurgerQty', 'portobelloBurgerQty', 'elkBurgerQty', 'veggieBurgerQty', 'kfcZingerQty'
+            );
+    
+      
+            let pizzaTotal = calculateCategoryTotal(
+               'fajitaSicilianQty', 'afghanitikkaQty', 'hawaiianPizzaQty', 'margheritaPizzaQty',
+                'meatPizzaQty', 'pepperoniPizzaQty', 'tandooriChickenQty', 'veggiePizzaQty'
+            );
+    
+         
+            let totalBill = burgerTotal + pizzaTotal;
+            document.getElementById('totalBill').textContent = totalBill;
+            document.getElementById('bill').style.display = 'block';
+        }
+    
+        function calculateCategoryTotal(...quantityIds) {
+            let totalBill = 0;
+            quantityIds.forEach(function (id) {
+                let qty = parseInt(document.getElementById(id).value) || 0;
+                let price = parseFloat(document.getElementById(id).nextElementSibling.textContent.match(/\d+/)[0]) || 0;
+                totalBill += qty * price;
+            });
+            return totalBill;
+        }
+    </script>
+</body>
+</html>
